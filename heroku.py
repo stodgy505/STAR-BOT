@@ -92,5 +92,5 @@ async def on_message(message):
         async for msg in client.logs_from(message.channel):
             await client.delete_message(msg)
 
-    client.run(os.getenv('token'))
+    client.login(process.env.bot_token);
         
